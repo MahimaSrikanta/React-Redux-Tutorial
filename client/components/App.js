@@ -1,10 +1,13 @@
 import React from 'react';
-import Greetings from './Greetings'
+import Navigation from './Navigations'
 
 class App extends React.Component {
   render () {
     return(
-      <Greetings />
+      <div className="container">
+      <Navigation />
+      {this.props.children}
+      </div>
     )
   }
 }
